@@ -38,7 +38,7 @@ def gradientDescent (F,dF, d):
         
     w = np.zeros(d)
     eta =0.01
-    for t in range (1000):
+    for t in range (500):
         value = F(w)
         gradient = dF(w)
         w = w - eta * gradient
