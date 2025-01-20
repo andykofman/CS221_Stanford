@@ -1,0 +1,24 @@
+##List all files tracked by Git:
+git ls-tree -r HEAD --name-only
+
+##Install git filter-branch:
+pip install git-filter-repo 
+
+##Remove a file from Git history:
+git filter-repo --path PATH --invert-paths
+
+##Forced execution of git filter-repo
+git filter-repo --path PATH --invert-paths --force
+
+##Re-added the remote repository:
+git remote add origin https://github.com/your-username/your-repo.git
+
+##Force-pushed the rewritten history:
+git push origin --force --all
+
+
+##Outcome
+The file will be successfully removed from the Git history.
+The cleaned repository was force-pushed to the GitHub remote.
+
+
