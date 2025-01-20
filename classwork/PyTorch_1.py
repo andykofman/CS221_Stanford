@@ -17,3 +17,7 @@ second_image = images[1]
 plt.imshow(second_image, cmap ='gray') #Display
 plt.axis('off') #disable axes
 plt.show()
+
+a = torch.tensor([[1,1], [1,0]])
+
+print(torch.matrix_power(a, 2))
